@@ -29,7 +29,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		D6A62DF827276CCC003041DF /* PBXContainerItemProxy */ = {
-
 			isa = PBXContainerItemProxy;
 			containerPortal = 22AA445B1D1302FB00CA6185 /* Project object */;
 			proxyType = 1;
@@ -63,7 +62,6 @@
 		D6A62DF727276CCC003041DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 
 /* End PBXFileReference section */
-
 /* Begin PBXFrameworksBuildPhase section */
 		22AA44601D1302FB00CA6185 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
