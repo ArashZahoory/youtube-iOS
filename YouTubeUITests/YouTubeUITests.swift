@@ -92,4 +92,29 @@ class YouTubeUITests: XCTestCase {
          app.staticTexts["Cancel"].tap()
          XCTAssertFalse(app.staticTexts["Cancel"].exists)
     }
+    
+    func testHomeScreen() {
+           let app = XCUIApplication()
+           app.launch()
+
+           //  Swipe to the 3rd video.
+           app.swipeUp()
+
+           //create array of strings to hold the titles/values
+           var elementLabels = [String]()
+           for i in 0..<app.tables.staticTexts.count {
+               elementLabels.append (app.tables.staticTexts.element(boundBy: i).label)
+           }
+
+           //the third video is always index 23 in the array elementLabels
+           let stringName = elementLabels[23]
+           app.staticTexts[stringName].firstMatch.tap()
+
+           //  Validate all the elements available on the screen.****
+           
+           //  Tap on the last video on the screen. Check if the UI element is selected. ****
+           
+           //  Minimize the video player.
+           app.buttons["minimize"].tap()
+       }
 }
