@@ -25,7 +25,7 @@ class YouTubeUITests: XCTestCase {
 
     
     // The comments seen INSIDE the function are not necessary, but included to assist in the effort of reviewing this assignment
-    func testSearchScenario() {
+        func testSearch() {
         // UI tests must launch the application that they test.\
         let testString = "test"
         let testoutString = "testout"
@@ -39,7 +39,7 @@ class YouTubeUITests: XCTestCase {
         // Type “test” in the search bar.
         let textField = app.textFields["Search on Youtube"]
         textField.typeText(testString)
-
+            
         // Select the option “testout” from the results list.
         let tablesQuery = app.tables
         tablesQuery.staticTexts[testoutString].tap()
@@ -98,11 +98,26 @@ class YouTubeUITests: XCTestCase {
     func testHomeScreen() {
         let app = XCUIApplication()
         app.launch()
-        //  Swipe to the 3rd video.
-        //  Tap on the video.
-        //  Validate all the elements available on the screen.
-        //  Tap on the last video on the screen. Check if the UI element is selected.
-        //  Minimize the video player.
         
+        //  Swipe to the 3rd video.
+        app.swipeUp()
+        
+        //create array of strings to hold the titles/values
+        var elementLabels = [String]()
+        for i in 0..<app.tables.staticTexts.count {
+            elementLabels.append (app.tables.staticTexts.element(boundBy: i).label)
+        }
+
+        //the third video is always index 23 in the array elementLabels
+        let stringName = elementLabels[23]
+        app.staticTexts[stringName].firstMatch.tap()
+        
+        //  Validate all the elements available on the screen.****
+        
+        //  Tap on the last video on the screen. Check if the UI element is selected. ****
+        
+        //  Minimize the video player.
+        app.buttons["minimize"].tap()
     }
 }
+
