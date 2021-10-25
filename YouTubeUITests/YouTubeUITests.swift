@@ -2,7 +2,7 @@
 //  YouTubeUITests.swift
 //  YouTubeUITests
 //
-//  Created by Arash Zahoory on 10/25/21.
+//  Created by Arash Zahoory on 10/24/21.
 //  Copyright © 2021 Haik Aslanyan. All rights reserved.
 //
 
@@ -118,3 +118,4 @@ class YouTubeUITests: XCTestCase {
            app.buttons["minimize"].tap()
        }
 }
+

@@ -29,6 +29,7 @@
 
 /* Begin PBXContainerItemProxy section */
 		D6A62DF827276CCC003041DF /* PBXContainerItemProxy */ = {
+
 			isa = PBXContainerItemProxy;
 			containerPortal = 22AA445B1D1302FB00CA6185 /* Project object */;
 			proxyType = 1;
@@ -60,6 +61,7 @@
 		D6A62DF327276CCC003041DF /* YouTubeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouTubeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A62DF527276CCC003041DF /* YouTubeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeUITests.swift; sourceTree = "<group>"; };
 		D6A62DF727276CCC003041DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
