@@ -54,18 +54,55 @@ class YouTubeUITests: XCTestCase {
         // there doesn't seem to be a requirement for an assertion here
     }
 
-    
+    //         Settings:
     func testSettings() {
+        // Store Settings Menu items
+        let settingsMenu = ["Settings", "Terms & privacy policy", "Send Feedback", "Help", "Switch Account", "Cancel"]
+        
         let app = XCUIApplication()
         app.launch()
         
+        // Tap on Settings; Check all the options are displayed 
+        app.navigationBars["YouTube"].buttons["navSettings"].tap()
+        for settingsOptions in settingsMenu{
+            //if exists, and is contained
+            XCTAssertTrue(app.staticTexts[settingsOptions].exists)
+            print(settingsOptions + " is true ")
+        }
+        app.staticTexts["Cancel"].tap()
         
+
+        // Tap on Settings; tap on Terms & privacy policy; check if the modal is dismissed.
+        app.navigationBars["YouTube"].buttons["navSettings"].tap()
+        app.staticTexts["Terms & privacy policy"].tap()
+        XCTAssertFalse(app.staticTexts["Cancel"].exists)
+        
+        // Tap on Settings; tap on Send Feedback; check if modal is dismissed.
+        app.navigationBars["YouTube"].buttons["navSettings"].tap()
+        app.staticTexts["Send Feedback"].tap()
+        XCTAssertFalse(app.staticTexts["Cancel"].exists)
+        
+        // Tap on Settings; tap on Switch Account; check if modal is dismissed.
+        app.navigationBars["YouTube"].buttons["navSettings"].tap()
+        app.staticTexts["Switch Account"].tap()
+        XCTAssertFalse(app.staticTexts["Cancel"].exists)
+        
+        // Tap on Settings; tap on Cancel; check if modal is dismissed.
+        app.navigationBars["YouTube"].buttons["navSettings"].tap()
+        app.staticTexts["Cancel"].tap()
+        XCTAssertFalse(app.staticTexts["Cancel"].exists)
     }
     
+    
+        //  Scenarios for Home Screen:
     func testHomeScreen() {
         let app = XCUIApplication()
         app.launch()
-        
+        //  Swipe to the 3rd video.
+        //  Tap on the video.
+        //  Validate all the elements available on the screen.
+        //  Tap on the last video on the screen. Check if the UI element is selected.
+        //  Minimize the video player.
         
     }
 }
