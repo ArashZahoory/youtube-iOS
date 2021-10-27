@@ -24,11 +24,11 @@
 		22B7F9E01D478BF9008C427D /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B7F9DF1D478BF9008C427D /* Video.swift */; };
 		22BD93601D3394A200CD57A5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BD935F1D3394A200CD57A5 /* User.swift */; };
 		22FD9CF41EDEDF200025B02F /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FD9CF31EDEDF200025B02F /* PlayerView.swift */; };
-		D64D40EF272618D500244A38 /* YouTubeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64D40EE272618D500244A38 /* YouTubeUITests.swift */; };
+		D6A62DF627276CCC003041DF /* YouTubeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A62DF527276CCC003041DF /* YouTubeUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D64D40F1272618D500244A38 /* PBXContainerItemProxy */ = {
+		D6A62DF827276CCC003041DF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 22AA445B1D1302FB00CA6185 /* Project object */;
 			proxyType = 1;
@@ -57,11 +57,11 @@
 		22B7F9DF1D478BF9008C427D /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Video.swift; path = Model/Video.swift; sourceTree = "<group>"; };
 		22BD935F1D3394A200CD57A5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Model/User.swift; sourceTree = "<group>"; };
 		22FD9CF31EDEDF200025B02F /* PlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerView.swift; path = "Supporting views/PlayerView.swift"; sourceTree = "<group>"; };
-		D64D40EC272618D500244A38 /* YouTubeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouTubeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D64D40EE272618D500244A38 /* YouTubeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeUITests.swift; sourceTree = "<group>"; };
-		D64D40F0272618D500244A38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-/* End PBXFileReference section */
+		D6A62DF327276CCC003041DF /* YouTubeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouTubeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6A62DF527276CCC003041DF /* YouTubeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeUITests.swift; sourceTree = "<group>"; };
+		D6A62DF727276CCC003041DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 
+/* End PBXFileReference section */
 /* Begin PBXFrameworksBuildPhase section */
 		22AA44601D1302FB00CA6185 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -70,7 +70,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D64D40E9272618D500244A38 /* Frameworks */ = {
+		D6A62DF027276CCC003041DF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -134,7 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				22AA44651D1302FB00CA6185 /* YouTube */,
-				D64D40ED272618D500244A38 /* YouTubeUITests */,
+				D6A62DF427276CCC003041DF /* YouTubeUITests */,
 				22AA44641D1302FB00CA6185 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,7 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				22AA44631D1302FB00CA6185 /* YouTube.app */,
-				D64D40EC272618D500244A38 /* YouTubeUITests.xctest */,
+				D6A62DF327276CCC003041DF /* YouTubeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,11 +163,11 @@
 			path = YouTube;
 			sourceTree = "<group>";
 		};
-		D64D40ED272618D500244A38 /* YouTubeUITests */ = {
+		D6A62DF427276CCC003041DF /* YouTubeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				D64D40EE272618D500244A38 /* YouTubeUITests.swift */,
-				D64D40F0272618D500244A38 /* Info.plist */,
+				D6A62DF527276CCC003041DF /* YouTubeUITests.swift */,
+				D6A62DF727276CCC003041DF /* Info.plist */,
 			);
 			path = YouTubeUITests;
 			sourceTree = "<group>";
@@ -192,22 +192,22 @@
 			productReference = 22AA44631D1302FB00CA6185 /* YouTube.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D64D40EB272618D500244A38 /* YouTubeUITests */ = {
+		D6A62DF227276CCC003041DF /* YouTubeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D64D40F5272618D500244A38 /* Build configuration list for PBXNativeTarget "YouTubeUITests" */;
+			buildConfigurationList = D6A62DFC27276CCC003041DF /* Build configuration list for PBXNativeTarget "YouTubeUITests" */;
 			buildPhases = (
-				D64D40E8272618D500244A38 /* Sources */,
-				D64D40E9272618D500244A38 /* Frameworks */,
-				D64D40EA272618D500244A38 /* Resources */,
+				D6A62DEF27276CCC003041DF /* Sources */,
+				D6A62DF027276CCC003041DF /* Frameworks */,
+				D6A62DF127276CCC003041DF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D64D40F2272618D500244A38 /* PBXTargetDependency */,
+				D6A62DF927276CCC003041DF /* PBXTargetDependency */,
 			);
 			name = YouTubeUITests;
 			productName = YouTubeUITests;
-			productReference = D64D40EC272618D500244A38 /* YouTubeUITests.xctest */;
+			productReference = D6A62DF327276CCC003041DF /* YouTubeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -227,7 +227,7 @@
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
-					D64D40EB272618D500244A38 = {
+					D6A62DF227276CCC003041DF = {
 						CreatedOnToolsVersion = 11.3.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 22AA44621D1302FB00CA6185;
@@ -248,7 +248,7 @@
 			projectRoot = "";
 			targets = (
 				22AA44621D1302FB00CA6185 /* YouTube */,
-				D64D40EB272618D500244A38 /* YouTubeUITests */,
+				D6A62DF227276CCC003041DF /* YouTubeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -264,7 +264,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D64D40EA272618D500244A38 /* Resources */ = {
+		D6A62DF127276CCC003041DF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -295,21 +295,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D64D40E8272618D500244A38 /* Sources */ = {
+		D6A62DEF27276CCC003041DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D64D40EF272618D500244A38 /* YouTubeUITests.swift in Sources */,
+				D6A62DF627276CCC003041DF /* YouTubeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D64D40F2272618D500244A38 /* PBXTargetDependency */ = {
+		D6A62DF927276CCC003041DF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 22AA44621D1302FB00CA6185 /* YouTube */;
-			targetProxy = D64D40F1272618D500244A38 /* PBXContainerItemProxy */;
+			targetProxy = D6A62DF827276CCC003041DF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -472,7 +472,7 @@
 			};
 			name = Release;
 		};
-		D64D40F3272618D500244A38 /* Debug */ = {
+		D6A62DFA27276CCC003041DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -494,7 +494,7 @@
 			};
 			name = Debug;
 		};
-		D64D40F4272618D500244A38 /* Release */ = {
+		D6A62DFB27276CCC003041DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -536,11 +536,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D64D40F5272618D500244A38 /* Build configuration list for PBXNativeTarget "YouTubeUITests" */ = {
+		D6A62DFC27276CCC003041DF /* Build configuration list for PBXNativeTarget "YouTubeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D64D40F3272618D500244A38 /* Debug */,
-				D64D40F4272618D500244A38 /* Release */,
+				D6A62DFA27276CCC003041DF /* Debug */,
+				D6A62DFB27276CCC003041DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
